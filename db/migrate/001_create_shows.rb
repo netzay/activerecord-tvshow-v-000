@@ -7,10 +7,4 @@ class CreateShows < ActiveRecord::Migration
       s.integer :rating
     end
   end
-
-
-  def highest_rating
-    Shows.maximum("rating")
-
-  end
 end
